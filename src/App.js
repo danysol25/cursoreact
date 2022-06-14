@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/css/App.css';
+
+import Header from './components/Header';
+import Slider from './components/Slider';
+import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
+import Section from './components/Section';
+
+import Peliculas from './components/Peliculas';
 
 function App() {
+  var buttonString = "Ver más";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header></Header>
+      <Slider
+        title="Bienvenido al curso de React"
+        btn={buttonString}
+
+      />
+
+      <div className='center'>
+      <Peliculas></Peliculas>
+
+
+        <Sidebar></Sidebar>
+        <div className='clearfix'></div>
+
+      </div>
+
+      <Footer></Footer>
+
     </div>
   );
 }
