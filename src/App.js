@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Slider from './components/Slider';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
-import Section from './components/Section';
 
 import Peliculas from './components/Peliculas';
 
@@ -20,7 +19,7 @@ function App() {
       />
 
       <div className='center'>
-      <Peliculas></Peliculas>
+        <Peliculas/>
 
 
         <Sidebar></Sidebar>

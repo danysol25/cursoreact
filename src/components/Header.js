@@ -33,7 +33,7 @@ class Header extends Component {
                             </ul>
 
                         </nav>
-                        <div classNameName="clearfix"></div>
+                        <div className="clearfix"></div>
                     </div>
 
                 </header>
